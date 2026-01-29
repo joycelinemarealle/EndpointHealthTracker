@@ -1,0 +1,14 @@
+/Users/joycelinemarealle/C#/EndPointHealthTracker/EndPointHealthTracker.App/bin/Debug/net8.0/EndPointHealthTracker.App
+/Users/joycelinemarealle/C#/EndPointHealthTracker/EndPointHealthTracker.App/bin/Debug/net8.0/EndPointHealthTracker.App.deps.json
+/Users/joycelinemarealle/C#/EndPointHealthTracker/EndPointHealthTracker.App/bin/Debug/net8.0/EndPointHealthTracker.App.runtimeconfig.json
+/Users/joycelinemarealle/C#/EndPointHealthTracker/EndPointHealthTracker.App/bin/Debug/net8.0/EndPointHealthTracker.App.dll
+/Users/joycelinemarealle/C#/EndPointHealthTracker/EndPointHealthTracker.App/bin/Debug/net8.0/EndPointHealthTracker.App.pdb
+/Users/joycelinemarealle/C#/EndPointHealthTracker/EndPointHealthTracker.App/obj/Debug/net8.0/EndPointHealthTracker.App.GeneratedMSBuildEditorConfig.editorconfig
+/Users/joycelinemarealle/C#/EndPointHealthTracker/EndPointHealthTracker.App/obj/Debug/net8.0/EndPointHealthTracker.App.AssemblyInfoInputs.cache
+/Users/joycelinemarealle/C#/EndPointHealthTracker/EndPointHealthTracker.App/obj/Debug/net8.0/EndPointHealthTracker.App.AssemblyInfo.cs
+/Users/joycelinemarealle/C#/EndPointHealthTracker/EndPointHealthTracker.App/obj/Debug/net8.0/EndPointHealthTracker.App.csproj.CoreCompileInputs.cache
+/Users/joycelinemarealle/C#/EndPointHealthTracker/EndPointHealthTracker.App/obj/Debug/net8.0/EndPointHealthTracker.App.dll
+/Users/joycelinemarealle/C#/EndPointHealthTracker/EndPointHealthTracker.App/obj/Debug/net8.0/refint/EndPointHealthTracker.App.dll
+/Users/joycelinemarealle/C#/EndPointHealthTracker/EndPointHealthTracker.App/obj/Debug/net8.0/EndPointHealthTracker.App.pdb
+/Users/joycelinemarealle/C#/EndPointHealthTracker/EndPointHealthTracker.App/obj/Debug/net8.0/EndPointHealthTracker.App.genruntimeconfig.cache
+/Users/joycelinemarealle/C#/EndPointHealthTracker/EndPointHealthTracker.App/obj/Debug/net8.0/ref/EndPointHealthTracker.App.dll
