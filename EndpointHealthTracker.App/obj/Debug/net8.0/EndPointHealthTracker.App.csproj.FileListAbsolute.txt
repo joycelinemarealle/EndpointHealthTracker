@@ -12,3 +12,4 @@
 /Users/joycelinemarealle/C#/EndPointHealthTracker/EndPointHealthTracker.App/obj/Debug/net8.0/EndPointHealthTracker.App.pdb
 /Users/joycelinemarealle/C#/EndPointHealthTracker/EndPointHealthTracker.App/obj/Debug/net8.0/EndPointHealthTracker.App.genruntimeconfig.cache
 /Users/joycelinemarealle/C#/EndPointHealthTracker/EndPointHealthTracker.App/obj/Debug/net8.0/ref/EndPointHealthTracker.App.dll
+/Users/joycelinemarealle/C#/EndpointHealthTracker/EndpointHealthTracker.App/obj/Debug/net8.0/EndpointHealthTracker.App.sourcelink.json

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EndpointHealthTracker.App")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+93846b617ead66213e1be6cb98e1c5363e3fa864")]
 [assembly: System.Reflection.AssemblyProductAttribute("EndpointHealthTracker.App")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EndpointHealthTracker.App")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

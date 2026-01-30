@@ -42,4 +42,16 @@
 - Learned when to use ToList(): reuse results, indexing, avoid re-running query
 
 ### Thur 01/29/2026
-- Learn post project to Github
+- Learn post Vscode. project to Github
+- Add gitignore to not track bib, .DSstore and obj
+
+### Fri 01/30/2026
+- LINQ query syntax to project numeric values from objects
+- Computed aggregates with LINQ: Average(latency), Max(worst latency), Count(healthiest reports)
+- Filtering with where before aggregation
+- Formatted numeric output -> 2 dp (F2)
+
+
+
+next : groupby, add another endpoint
+groupby,where,OrderBy / OrderByDescending,Average,Count,Max,GroupBy

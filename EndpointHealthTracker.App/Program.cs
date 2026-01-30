@@ -57,6 +57,7 @@ public class Program
         //     select report;
        
         //to list if reusing, need indexing 
+        Console.WriteLine("/n Most recent time stamp");
         var mostRecent= (
            from report in reports
            orderby report.Timestamp descending
@@ -72,6 +73,36 @@ public class Program
 
         Console.WriteLine("\nMost recent:");
         Console.WriteLine(mostRecent[0].Timestamp);
+
+
+
+         Console.WriteLine("\n Avg Latency of reports");
+        double avgLatency = (
+            from report in reports
+            select report.LatencyMs
+            ).Average();
+
+        
+         Console.WriteLine($"Average of Latency: {avgLatency:F2} ms");
+
+         Console.WriteLine("\nUnhealthiestreport");
+         double maxLatency = (
+            from report in reports
+            select report.LatencyMs
+            ).Max();
+
+        Console.WriteLine($"Unhealthiest report has latency of {maxLatency} ms");
+
+        Console.WriteLine("\nCount of healthiest reports < 5 ms");
+        int countHealthiest = (
+            from report in reports
+            where report.LatencyMs < 5
+            select report.LatencyMs
+        ).Count();
+
+        Console.WriteLine($"There are {countHealthiest} report with latency < 5");
+    
+
     }
 }
 
