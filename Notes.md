@@ -52,6 +52,17 @@
 - Formatted numeric output -> 2 dp (F2)
 
 
+### Sat 01/31/2026
 
-next : groupby, add another endpoint
+- Added two more endpoints (Beta, Gamma) and reports for them
+- Dictionary: adding objects, looping through pairs, remembering to use value to access object properties
+- GroupBy in LINQ and computing Average → still working through the issue(For each EndpointId, what is the average latency)
+
+
+### Next steps
 groupby,where,OrderBy / OrderByDescending,Average,Count,Max,GroupBy
+For each EndpointId, what is the average latency
+For each endpoint, what is the max latency spike
+For each endpoint, what percent of reports are healthy
+For each endpoint, what percent of reports are healthy?
+For each endpoint, what is the most recent report and its health

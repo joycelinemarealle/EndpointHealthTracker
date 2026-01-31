@@ -8,12 +8,29 @@ public class Program
     static void Main (string [] args)
     {
         Console.WriteLine("\nWelcome to the EndPointHealthTracker");
-        NetworkEndpoint networkEndpoint = new NetworkEndpoint(1, "Alpha");
-        Console.WriteLine($"Id is {networkEndpoint.Id} and name {networkEndpoint.Name}");
+        NetworkEndpoint alphaEndpoint = new NetworkEndpoint(1, "Alpha");
+        NetworkEndpoint betaEndpoint = new NetworkEndpoint(2,"Beta");
+        NetworkEndpoint gammaEndpoint = new NetworkEndpoint(3,"Gamma");
 
+        Console.WriteLine("Dictionary to store Network Endpoint objects");
+        Dictionary<int, NetworkEndpoint> networkEndpoints = new Dictionary<int,NetworkEndpoint>();
+        networkEndpoints.Add(1, alphaEndpoint);
+        networkEndpoints[2] = betaEndpoint;
+        networkEndpoints[3] = gammaEndpoint;
+       
+        foreach(var endpoint in networkEndpoints.Values)
+        {
+             Console.WriteLine($"\nNetwork Endpoint Id: {endpoint.Id} and name {endpoint.Name}");
+        }
+       
+         Console.WriteLine("\n.....Add health report to the list.....");
         HealthReport healthyReport1 = new HealthReport(1,false, 5, new DateTime(2025,12,16,16,00,53));
         HealthReport healthyReport2 = new HealthReport(1,true, 1, new DateTime(2026,01,15,12,15,33));
         HealthReport healthyReport3 = new HealthReport(1,true, 0.5, new DateTime(2026,01,26,9,28,23));
+        HealthReport healthyReport4 = new HealthReport(2, true, 2, new DateTime(2026,01,31,9,25,15));
+        HealthReport healthyReport5 = new HealthReport(2, false, 20, new DateTime(2026,01,30,23,30,01));
+        HealthReport healthyReport6 = new HealthReport(3, false, 7, new DateTime(2026,01,29,19,01,48));
+        HealthReport healthyReport7 = new HealthReport(3, true, 0.86, new DateTime(2026,01,31,10,47,21));
 
         //Use Lists more flexible, and need  timeline, order matteers
         List<HealthReport> reports = new List <HealthReport> ();
@@ -21,10 +38,14 @@ public class Program
         reports.Add(healthyReport1);
         reports.Add(healthyReport2);
         reports.Add(healthyReport3);
+        reports.Add(healthyReport4);
+        reports.Add(healthyReport5);
+        reports.Add(healthyReport6);
+        reports.Add(healthyReport7);  
 
         foreach(var report in reports)
         {
-            Console.WriteLine($" Report with Id {report.EndpointId} , latency: {report.LatencyMs} ms is healthy: {report.IsHealthy}");
+            Console.WriteLine($"\nReport with Id {report.EndpointId} , latency: {report.LatencyMs} ms is healthy: {report.IsHealthy}");
         }
 
         Console.WriteLine("\n ........ LINQ..........");
@@ -101,6 +122,24 @@ public class Program
         ).Count();
 
         Console.WriteLine($"There are {countHealthiest} report with latency < 5");
+
+        Console.WriteLine("For each EndpointId, what is the average latency");
+        var latencyAvgPerEndpoint = 
+        from report in reports
+        groupby report.EndpointId into endpointGroup
+       select new
+       {
+        AverageLatency = endpointGroup.Average(x=>x.LatencyMs);
+
+       };       
+
+
+        
+
+        Console.WriteLine("eFor each EndpointId,  the average latency is {latencyAvgPerEndPoint}");
+
+
+
     
 
     }
